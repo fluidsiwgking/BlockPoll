@@ -1,0 +1,15 @@
+{
+  "name": "blockpoll",
+  "private": true,
+  "workspaces": ["web", "contracts"],
+  "engines": {"node": ">=18"},
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "echo "Run tests in workspaces""
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3"
+  }
+}

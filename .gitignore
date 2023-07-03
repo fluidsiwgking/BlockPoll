@@ -1,0 +1,17 @@
+# Node
+node_modules/
+.npm/
+.next/
+.next-cache/
+coverage/
+dist/
+build/
+.env*
+\.DS_Store
+# Hardhat
+artifacts/
+cache/
+\.hardhat/
+# Local secrets
+github_accounts.csv
+project_description.txt
