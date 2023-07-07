@@ -1,0 +1,1 @@
+- Fri Jul 07 10:17:00 2023 +0000: feat: initialize monorepo scaffolding and base configs
