@@ -1,0 +1,1 @@
+- Tue Jul 25 11:34:00 2023 +0000: docs: add functional scope and requirements
