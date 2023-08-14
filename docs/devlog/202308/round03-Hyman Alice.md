@@ -1,0 +1,1 @@
+- Mon Aug 14 12:16:00 2023 +0000: feat(web): scaffold Next.js app with minimal layout
