@@ -1,0 +1,1 @@
+- Sun Sep 17 13:54:00 2023 +0000: feat(contracts): add VotingPoll and VotingFactory contracts
