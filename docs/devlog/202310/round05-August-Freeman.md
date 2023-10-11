@@ -1,0 +1,1 @@
+- Wed Oct 11 14:29:00 2023 +0000: docs: document architecture and compiler settings
