@@ -1,0 +1,1 @@
+- Sun Dec 17 16:42:00 2023 +0000: feat(web): add chain constants placeholder address for factory
