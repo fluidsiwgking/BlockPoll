@@ -1,0 +1,1 @@
+- Thu Jan 18 09:59:00 2024 +0000: docs: describe core contract invariants
