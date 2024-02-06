@@ -1,0 +1,3 @@
+- Voting before deadline succeeds
+- Duplicate voting fails with "already"
+- Out-of-range option fails
