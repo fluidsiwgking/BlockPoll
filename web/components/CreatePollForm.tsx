@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useWriteContract } from 'wagmi';
 import { votingFactoryAbi } from '../lib/abi';
 import { VOTING_FACTORY_ADDRESS } from '../lib/chain';
+import { uploadJson } from '../lib/ipfs';
 
 export function CreatePollForm() {
   const [question, setQuestion] = useState("");
@@ -17,12 +18,14 @@ export function CreatePollForm() {
       alert('Please provide a question URI/CID and at least two options.');
       return;
     }
+    const payload = { question, options: trimmed };
+    const cid = await uploadJson(payload);
     const deadline = Math.floor(Date.now() / 1000) + deadlineHours * 3600;
     await writeContractAsync({
       address: VOTING_FACTORY_ADDRESS as `0x${string}`,
       abi: votingFactoryAbi as any,
       functionName: 'createPoll',
-      args: [question, trimmed, BigInt(deadline)],
+      args: [cid, trimmed, BigInt(deadline)],
     });
     setQuestion('');
     setOptions([]);
