@@ -1,0 +1,1 @@
+- Sat May 18 13:57:00 2024 +0000: docs: add security properties
