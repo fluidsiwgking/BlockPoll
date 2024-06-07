@@ -15,6 +15,27 @@ A decentralized polling and survey platform where creators publish on-chain poll
 - Storage: IPFS for large text
 - Tooling: Hardhat, TypeScript, ESLint, Jest/ViTest
 
+## Getting Started
+
+Environment variables:
+- `NEXT_PUBLIC_FACTORY_ADDRESS`: Deployed `VotingFactory` address
+- `WEB3_STORAGE_TOKEN`: Token for uploading JSON to Web3.Storage (used by `/api/ipfs`)
+
+Install and run:
+```bash
+cd contracts && npm i && cd ..
+cd web && npm i && npm run dev
+```
+
+Deploy contracts (example local or testnet):
+```bash
+cd contracts
+npx hardhat compile
+npx hardhat run scripts/deploy.ts --network <your-network>
+```
+
+Then set the `NEXT_PUBLIC_FACTORY_ADDRESS` in `web/.env.local`.
+
 ## Monorepo Layout
 - /web: Next.js dApp
 - /contracts: Solidity smart contracts + tests
