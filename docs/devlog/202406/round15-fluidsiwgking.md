@@ -1,0 +1,1 @@
+- Thu Jun 20 16:45:00 2024 +0000: docs: add roadmap items (ZK, token-gated)
