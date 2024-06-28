@@ -2,7 +2,7 @@
   "name": "blockpoll-contracts",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "build": "hardhat compile",
     "test": "hardhat test",
