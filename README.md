@@ -20,6 +20,8 @@ A decentralized polling and survey platform where creators publish on-chain poll
 Environment variables:
 - `NEXT_PUBLIC_FACTORY_ADDRESS`: Deployed `VotingFactory` address
 - `WEB3_STORAGE_TOKEN`: Token for uploading JSON to Web3.Storage (used by `/api/ipfs`)
+ - `AMOY_RPC_URL`: Polygon Amoy RPC endpoint
+ - `PRIVATE_KEY`: Deployer private key (without 0x)
 
 Install and run:
 ```bash
@@ -31,7 +33,7 @@ Deploy contracts (example local or testnet):
 ```bash
 cd contracts
 npx hardhat compile
-npx hardhat run scripts/deploy.ts --network <your-network>
+npx hardhat run scripts/deploy.ts --network polygonAmoy
 ```
 
 Then set the `NEXT_PUBLIC_FACTORY_ADDRESS` in `web/.env.local`.
