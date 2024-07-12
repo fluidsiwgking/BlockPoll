@@ -1,0 +1,6 @@
+{
+  "root": true,
+  "env": { "es2022": true, "browser": true, "node": true },
+  "extends": ["eslint:recommended"],
+  "ignorePatterns": ["node_modules","artifacts","cache",".next","dist"]
+}
