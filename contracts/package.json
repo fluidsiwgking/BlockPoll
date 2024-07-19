@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "hardhat compile",
-    "test": "hardhat test"
+    "test": "hardhat test",
+    "deploy:amoy": "hardhat run scripts/deploy.ts --network polygonAmoy"
   },
   "devDependencies": {
     "hardhat": "^2.22.10",
