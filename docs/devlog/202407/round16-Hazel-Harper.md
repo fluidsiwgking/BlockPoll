@@ -1,0 +1,1 @@
+- Wed Jul 24 09:30:00 2024 +0000: docs: add operations and deployment notes
