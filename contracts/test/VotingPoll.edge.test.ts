@@ -5,9 +5,9 @@ describe("VotingPoll edge cases", () => {
   it("reverts when voting after deadline", async () => {
     const Poll = await ethers.getContractFactory("VotingPoll");
     const now = (await ethers.provider.getBlock("latest")).timestamp;
-    const poll = await Poll.deploy("ipfs://demo", ["A", "B"], now + 1);
+    const poll = await Poll.deploy("ipfs://demo", ["A", "B"], now + 10);
     await poll.waitForDeployment();
-    await ethers.provider.send("evm_increaseTime", [120]);
+    await ethers.provider.send("evm_increaseTime", [20]);
     await ethers.provider.send("evm_mine", []);
     await expect(poll.vote(0)).to.be.revertedWith("ended");
   });
